@@ -1,0 +1,18 @@
+{
+  "name": "playwright-saucedemo-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Reto de automatización Front-End con Playwright y Cucumber",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.8.1",
+    "@playwright/test": "^1.59.1",
+    "playwright-core": "^1.59.1",
+    "ts-node": "^10.9.2"
+  }
+}
