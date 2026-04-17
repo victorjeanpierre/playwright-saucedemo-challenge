@@ -69,38 +69,7 @@ reports/cucumber-report.html
 ├── cucumber.js
 ├── package.json
 └── README.md
-🔄 CI/CD (Opcional - Mejora Recomendada)
 
-Puedes integrar este proyecto con GitHub Actions para ejecutar pruebas automáticamente en cada push.
-
-Ejemplo básico:
-
-name: QA Automation Tests
-
-on: [push, pull_request]
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Install Playwright
-        run: npx playwright install --with-deps
-
-      - name: Run tests
-        run: npm test
 👨‍💻 Autor
-
 Jean Pierre Curipaco Marquez
 QA Automation Engineer
